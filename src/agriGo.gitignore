@@ -1,0 +1,15 @@
+# Compiled Java
+bin/
+build/
+*.class
+
+# Eclipse/IDE files
+.metadata/
+.settings/
+.project
+.classpath
+Servers/
+
+# OS files
+.DS_Store
+Thumbs.db

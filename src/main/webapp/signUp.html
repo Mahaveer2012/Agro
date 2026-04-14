@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signUp.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <section class="registration">
+        <div class="container">
+            <div class="title image" style="background-image: url(Assets/Registration.jpg); background-size: cover; border-radius: .25rem;"></div>
+
+            <div class="title description">
+                <div class="description-info">
+                    <h1 style="font-size: 2rem;">AgroGo...</h1>
+                    <p>Delivering Fresh</p>
+                    <hr>
+                </div>
+
+<form action="RegisterServlet" method="post" class="Forum" style="color:#2E2E2E;">
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" name="username" placeholder="Enter your full name" required>
+                    <br>
+                    
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <br>
+
+                    <label for="phone">Mobile Number :</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" required>
+                    
+                    
+                   <!-- Inside your signUp.html form -->
+                   
+                   <div class="role-btn">
+                   
+                   <p>Select your Role:</p>
+					<div class="farmer f">
+					<label for="farmer">Farmer</label>
+					
+					<input type="radio" id="farmer" name="uRole" value="farmer">
+					</div>
+				<div class="farmer">
+				<label for="customer">Customer</label>
+				<input type="radio" id="customer" name="uRole" value="customer">
+				</div>
+				</div>
+
+                    <label for="password">Password :</label>
+                    <input type="password" id="password" name="password" placeholder="Create password" required>
+                    
+                    <div class="login-entry">
+                        <button type="submit" class="btn-registration" style="cursor: pointer;">Sign Up</button>
+                      
+                        <p>Already have an account? <a href="login.html" style="text-decoration: none; color: green;">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriGO | Fresh from Farm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        
+        body { background: #f0fdf4; color: #166534; }
+
+        /* Navigation Bar Styling */
+        nav { 
+            display: flex; 
+            justify-content: space-between; 
+            padding: 15px 8%; 
+            align-items: center; 
+            background: white; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Logo and Brand Name Container */
+        .brand-container {
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Space between logo and text */
+            text-decoration: none;
+        }
+
+        .logo-img {
+            height: 55px;
+            width: 55px;
+            border-radius: 50%; /* Makes your logo circular */
+            object-fit: cover;
+            border: 2px solid #2e7d32;
+            transition: transform 0.3s ease; /* Smooth transition for hover */
+        }
+
+        /* Hover Effect: Zoom-in */
+        .brand-container:hover .logo-img {
+            transform: scale(1.15); /* Zooms the logo slightly */
+        }
+
+        .logo-text { 
+            font-size: 26px; 
+            font-weight: 700; 
+            color: #2e7d32; 
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        /* Hero Section Styling */
+        .hero { 
+            height: 85vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            text-align: center;
+            /* Using a high-quality agriculture background */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover; 
+            background-position: center;
+            color: white; 
+            flex-direction: column; 
+            padding: 20px;
+        }
+
+        .hero h1 { font-size: 3.5rem; margin-bottom: 15px; font-weight: 600; }
+        .hero p { font-size: 1.2rem; margin-bottom: 35px; max-width: 700px; line-height: 1.6; }
+
+        /* Buttons */
+        .btn { 
+            padding: 12px 35px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: 0.3s; 
+            display: inline-block;
+        }
+        
+        .btn-primary { background: #2e7d32; color: white; border: 2px solid #2e7d32; }
+        .btn-primary:hover { background: #1b5e20; border-color: #1b5e20; }
+        
+        .btn-outline { border: 2px solid white; color: white; }
+        .btn-outline:hover { background: white; color: #2e7d32; }
+
+        .login-link { text-decoration: none; color: #2e7d32; font-weight: 600; }
+        .login-link:hover { color: #166534; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="brand-container">
+            <img src="logo.jpeg" alt="AgriGo Logo" class="logo-img">
+            <span class="logo-text">AgriGO</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="login.html" class="login-link">Login</a>
+            <a href="signUp.html" class="btn btn-primary">Join Now</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Nature's Best, Delivered Fresh.</h1>
+        <p>Your direct bridge to local farms. We bring sustainable, organic, and farm-fresh produce straight from the soil to your table.</p>
+        <div>
+            <a href="DisplayProductsServlet" class="btn btn-primary">Get Started</a>
+            <a href="DisplayProductsServlet" class="btn btn-outline" style="margin-left: 15px;">Explore Mart</a>
+        </div>
+    </section>
+
+</body>
+</html>
